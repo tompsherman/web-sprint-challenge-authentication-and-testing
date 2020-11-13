@@ -2,6 +2,10 @@ const axios = require('axios');
 
 const router = require('express').Router();
 
+router.get('/test', (req,res)=>{ 
+  res.status(200).json({message: 'yessireebob'})  
+ })
+
 router.get('/', (req, res) => {
   const requestOptions = {
     headers: { accept: 'application/json' },
